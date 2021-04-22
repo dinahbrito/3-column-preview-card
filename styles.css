@@ -4,6 +4,8 @@
     --dark_cyan: hsl(179, 100%, 13%);
     --transparent_white: hsla(0, 0%, 100%, 0.75);
     --light_grey: hsl(0, 0%, 95%);
+    --white: #fff;
+    --black: #000;
 }
 body {
     background-color: var(--light_grey);
@@ -24,7 +26,7 @@ h2 {
     font-family: "Big Shoulders Display", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
 }
 
@@ -40,13 +42,13 @@ button {
     border-radius: 30px;
     width: 145px;
     height: 45px;
-    background-color: white;
+    background-color: var(--white);
     margin: 1rem 2rem 3rem 2rem;
+    color: var(--black);
 }
 
 main {
     border-radius: 10px;
-    background-color: blue;
     overflow: hidden;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -56,5 +58,15 @@ main {
 
 .sedans {
     background-color: var(--orange);
-    
+    --black: var(--orange);
+}
+
+.suvs {
+    background-color: var(--cyan);
+    --black: var(--cyan);
+}
+
+.luxury {
+    background-color: var(--dark_cyan);
+    --black: var(--dark_cyan);
 }
