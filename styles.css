@@ -5,10 +5,45 @@
     --transparent_white: hsla(0, 0%, 100%, 0.75);
     --light_grey: hsl(0, 0%, 95%);
 }
+body {
+    background-color: var(--light_grey);
+    margin: 6rem 0rem 6rem 0rem;
+}
+
+img {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
 
 p {
     font-family: "Lexend Deca", sans-serif;
+    color: var(--light_grey);
+    color: var(--transparent_white);
 }
 h2 {
     font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+p, h2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+main {
+    border-radius: 10px;
+    background-color: blue;
+    overflow: hidden;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sedans {
+    background-color: var(--orange);
+    
 }
