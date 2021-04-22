@@ -70,3 +70,23 @@ main {
     background-color: var(--dark_cyan);
     --black: var(--dark_cyan);
 }
+
+/*styling for screens 376px - 1440px */
+@media (min-width:376px) and (max-width:1440px) {
+    body {
+        margin: 8rem 12.5rem 8rem 12.5rem;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        margin: 3rem 4rem 0rem 3rem;
+    }
+    button {
+        margin-top: 4rem;
+    }
+    p {
+        padding-right: 3rem;
+    }
+}
