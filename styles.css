@@ -7,53 +7,74 @@
     --white: #fff;
     --black: #000;
 }
-body {
-    background-color: var(--light_grey);
-    margin: 6rem 0rem 6rem 0rem;
+
+/* Reset */
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
-img {
-    padding-top: 3rem;
-    padding-left: 2rem;
+body {
+    background-color: var(--light_grey);
 }
 
 p {
     font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
     color: var(--light_grey);
     color: var(--transparent_white);
+    line-height: 25px;
 }
 h2 {
-    font-family: "Big Shoulders Display", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
     color: var(--white);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
-p, h2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+button {
+    background-color: var(--white);
+    border: none;
+    border-radius: 25px;
+    color: var(--black);
+    font-size: 15px;
+    width: 146px;
+    height: 48px;
 }
 
-button {
-    border: none;
-    border-radius: 30px;
-    width: 145px;
-    height: 45px;
-    background-color: var(--white);
-    margin: 1rem 2rem 3rem 2rem;
-    color: var(--black);
+button:hover {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 main {
+    align-items: center;
     border-radius: 8px;
-    overflow: hidden;
-    margin-left: 2rem;
-    margin-right: 2rem;
     display: grid;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 327px;
+    overflow: hidden;
+    
+}
+
+.sedans, .suvs, .luxury {
+    align-items: center;
+    display:grid;
+    height: 442px;
+    justify-content: center;
+    padding: 48px;
 }
 
 .sedans {
@@ -64,6 +85,7 @@ main {
 .suvs {
     background-color: var(--cyan);
     --black: var(--cyan);
+    
 }
 
 .luxury {
@@ -71,22 +93,35 @@ main {
     --black: var(--dark_cyan);
 }
 
-/*styling for screens 376px - 1440px */
-@media (min-width:376px) {
+/*styling for screens 1089px and up */
+@media (min-width: 1089px) {
     body {
-        margin: 8rem 12.5rem 8rem 12.5rem;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        height: 100vh;
+
     }
     main {
+        border-radius: 8px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        align-content: center;
-        margin: 3rem 4rem 0rem 3rem;
+        width: 920px;
+        overflow: hidden;
+        margin: 0;
     }
-    button {
-        margin-top: 4rem;
+    h2 {
+        line-height: 48px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
+    
     p {
-        padding-right: 3rem;
+        margin-bottom: 75px;
     }
+    
+    .sedans, .suvs, .luxury {
+        height: 500px;
+    }
+
 }
