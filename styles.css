@@ -48,7 +48,7 @@ button {
 }
 
 main {
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -72,7 +72,7 @@ main {
 }
 
 /*styling for screens 376px - 1440px */
-@media (min-width:376px) and (max-width:1440px) {
+@media (min-width:376px) {
     body {
         margin: 8rem 12.5rem 8rem 12.5rem;
     }
