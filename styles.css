@@ -108,7 +108,6 @@ main {
         grid-template-columns: 1fr 1fr 1fr;
         width: 920px;
         overflow: hidden;
-        margin: 0;
     }
     h1 {
         line-height: 48px;
